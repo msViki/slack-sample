@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slack</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./server-list.css" />
+    <link rel="stylesheet" href="./channel-list.css" />
+    <link rel="stylesheet" href="./chat.css" />
+    <link rel="stylesheet" href="./profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="app">
+    <aside class="server-list app-section">
+      <div class="server">
+        <img class="server-icon" src="./assets/Object.jpg" />
+      </div>
+      <div class="server server-inactive">
+        <img class="server-icon" src="./assets/Layer 6.jpg" />
+      </div>
+      <div class="server server-inactive">
+        <img class="server-icon" src="./assets/Layer 7.jpg" />
+      </div>
+    </aside>
+    <section class="channel-and-friends">
+      <div>
+        <h1>Nomad List</h1>
+      </div>
+      <div>
+        <span>All treads</span>
+      </div>
+      <div>
+        <div>
+          <h3>Channels</h3>
+          <span>5</span>
+        </div>
+        <ul class="channel-list">
+          <li class="channel-list-item channel-list-item-active">general</li>
+          <li class="channel-list-item">support</li>
+          <li class="channel-list-item">marketing</li>
+          <li class="channel-list-item">thailand</li>
+          <li class="channel-list-item">bali</li>
+        </ul>
+      </div>
+      <div>
+        <div>
+          <h3>Friends</h3>
+          <span>3</span>
+        </div>
+        <div class="friend-list">
+          <div class="friend-list-item">
+            <div class="friend-status friend-status-online"></div>
+            <img class="friend-avatar" src="./assets/Orlando.jpg" />
+            <span class="friend-name">Orlando Diggs</span>
+          </div>
+          <div class="friend-list-item">
+            <div class="friend-status friend-status-online"></div>
+            <img class="friend-avatar" src="./assets/Carmen.jpg" />
+            <span class="friend-name">Carmen Velasco</span>
+          </div>
+          <div class="friend-list-item">
+            <div class="friend-status friend-status-offline"></div>
+            <img class="friend-avatar" src="./assets/Marie.jpg" />
+            <span class="friend-name">Marie Jensen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="chat">
+      <header class="header">
+        <div class="header-left">
+          <h2 class="chat-title">#general</h2>
+          <button class="icon-button">
+            <img class="icon" src="./assets/star.svg" />
+          </button>
+        </div>
+        <div class="header-right">
+          <input class="search-input" placeholder="Search..." />
+          <button class="icon-button">
+            <img class="icon" src="./assets/bell.svg" />
+          </button>
+        </div>
+      </header>
+      <div></div>
+      <div></div>
+    </main>
+    <aside class="profile" id="profile">
+      <h2>Amilia Luna</h2>
+    </aside>
+    <button class="icon-button" id="profile-button">
+      <img class="icon" src="./assets/arrow.svg" />
+    </button>
+    <script src="./profile.js"></script>
+  </body>
+</html>

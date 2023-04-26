@@ -1,0 +1,45 @@
+.chat {
+  width: 100%;
+  background-color: white;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+
+.header-left {
+  display: flex;
+}
+
+.chat-title {
+  margin: 0px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.header-right {
+}
+
+.search-input {
+  height: 33px;
+  width: 240px;
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  padding: 8px 16px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  box-sizing: border-box;
+  color: #8d8d8d;
+}

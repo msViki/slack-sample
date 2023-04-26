@@ -1,0 +1,20 @@
+.server-list {
+  width: 70px;
+  padding-top: 32px;
+  background: #000000;
+  opacity: 0.7;
+}
+
+.server {
+  padding: 10px 16px;
+}
+
+.server-inactive {
+  opacity: 0.3;
+}
+
+.server-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

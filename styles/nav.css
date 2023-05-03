@@ -1,0 +1,61 @@
+.app {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-image: url(../assets/Photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .app::-webkit-scrollbar {
+    display: none;
+  }
+.navList {
+    height: 20%;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    transition: width 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+   
+    
+  }
+  .navUl {
+    padding-inline-start: 1px;
+    list-style-type: none;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  .navItem {
+    font-size: 20px;
+    
+  }
+   .nav {
+    position: fixed;
+    bottom: 40%;
+    right: 0px;
+     width: 30px;
+    min-width: 30px;
+    background-color: rgb(152, 152, 252);
+    border: 1px white;
+    border-radius: 10px;
+  }
+  
+  .activeLink {
+background-color: rgb(61, 61, 185);
+border-radius: 10px;
+color: white;
+  }
+
+   .nav-button {
+    margin: 0 0px 10px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+   }

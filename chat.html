@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/chat.css"/>
+    <link rel="stylesheet" href="./styles/nav.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body class="app">
+  <nav>
+    <div class="nav" id="nav">
+      <div class="navList">
+        <ul class="navUl">
+          <li class="navItem">
+            <a href="index.html" class="link">👥 Channels & Friends</a>
+          </li>
+          <li class="navItem">
+            <a href="chat.html" class="link activeLink">💬 Chat</a>
+          </li>
+          <li class="navItem">
+            <a href="profile.html" class="link">👁️‍🗨️ Profile</a>
+          </li>
+        </ul>
+      </div>
+      <button class="nav-button" id="nav-button">
+        <img class="icon" src="./assets/arrow.svg" />
+      </button>
+    </div>
+  </nav>
+
+    <main class="chat">
+        <header class="header">
+          <div class="header-left">
+            <h2 class="chat-title">#general</h2>
+              <img class="icon" src="./assets/star.svg" />
+          </div>
+          <div class="header-right">
+            <div class="peopleOnline">
+              <img src="./assets/person.svg">
+              <span class="headerNumber">1,093</span>
+            </div>
+            <input class="search-input" placeholder="Search..."></input>
+              <img class="bell" src="./assets/bell.svg" />
+              <img src="./assets/other.svg">
+          </div>
+        </header>
+      <hr class="titleLine"> 
+
+        <div class="messages">
+          <div class="message messageJeshua">
+            <a href="./profile.html"><img src="./assets/jeshua.jpg" class="friendPhoto"></a>
+            <div class="messageContent">
+              <span class="name"><a class="profileLink" href="./profile.html">Jeshua Stout</a></span> <span class="time">6:38 PM</span>
+              <br>
+              <span class="mention">@pierrhack I did for 6 days in Iceland</span>
+            </div>
+          </div>
+        <div class="date">
+         Monday, October 22nd
+        </div>
+
+          <div class="message messageHarold">
+            <a href="./profile.html"><img src="./assets/harold.jpg" class="friendPhoto"></a>
+            <div class="messageContent">
+              <span class="name"><a class="profileLink" href="./profile.html">Harold Adams</a></span> <span class="time">5:02 PM</span>
+              <br>
+              <span class="text">Which country to visit next? This is a photo with my friends - celebrating in Bali 😎</span>
+              <br>
+              <span class="mention">my-top-places.jpg</span>
+              <br>
+              <img class="haroldPhoto" src="./assets/messagePhoto.jpg">
+            </div>
+          </div>
+
+          <div class="date dateYesterday">
+            Yesterday
+           </div>
+
+          <div class="message messageAada">
+            <a href="./profile.html"><img src="./assets/aada.jpg" class="friendPhoto"></a>
+            <div class="messageContent">
+              <span class="name"><a class="profileLink" href="./profile.html">Aada Laine</a></span> <span class="time">11:54 AM</span>
+              <br>
+              <span class="mention">@har_adams wow it's amazing, I want to buy a van and travelling next year</span>
+            </div>
+          </div>
+
+          <div class="date dateToday">
+            Today
+           </div>
+
+          <div class="message messageNala">
+            <a href="./profile.html"><img src="./assets/Nala.jpg" class="friendPhoto"></a>
+            <div class="messageContent">
+              <span class="name"><a class="profileLink" href="./profile.html">Nala Hester</a></span> <span class="time">11:54 AM</span>
+              <br>
+              <span class="text">Working from a van in Australia isn't feasible if you need internet. It may have improved over the last years but I spent some time in a camper van around Tasmania and internet was a real problem (and Tasmania is tiny compared to the rest of the country).</span>
+            </div>
+          </div>
+
+          <div class="message messageRamon">
+            <a href="./profile.html"><img src="./assets/ramon.jpg" class="friendPhoto"></a>
+            <div class="messageContent">
+              <span class="name"><a class="profileLink" href="./profile.html">Ramon Bateman</a></span> <span class="time">11:59 AM</span>
+              <br>
+              <span class="mention">@aa_da </span><span class="text">What's the reason for the van? Saving money or just like to get outside? If you've got a stable source of income you could always do some short term Airbnbs + buy a truck/topper, build a platform in the back. That way you can always convert it back to a truck and sleep in an apartment if you want.</span>
+            </div>
+          </div>
+        </div>
+        <hr class="titleLine"> 
+
+        <div class="typeZone" id="typeZone">
+          <img class="clipIcon" src="./assets/paperclip.svg">
+          <img class="micIcon" src="./assets/micro.svg">
+          <input class="typeInput" type="text" placeholder="Message in #general">
+          <img class="emojiIcon" src="./assets/smile.svg">
+        </div>
+
+        <a class="message-button" href="#typeZone" title="To the end">
+          <img class="message-button-icon" src="./assets/arrow.svg" />
+        </a>
+
+      </main>
+      
+      <script src="./nav.js"></script>
+</body>
+</html>

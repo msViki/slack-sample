@@ -1,0 +1,99 @@
+.main {
+    width: 201px;
+    min-width: 201px;
+    margin: auto;
+    background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.8;
+  }
+  .nameZone {
+    margin-top: 14.5px;
+    margin-bottom: 3.5px;
+    display: flex;
+  }
+.name {
+    font-family: 'Lato';
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+margin: 0 5.5px 0 20px;
+}
+.dotIcon {
+    width: 6.5px;
+    padding-top: 4px;
+}
+.job {
+font-family: 'Lato';
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #5F6164;
+margin: 0 auto 20px 20px;
+}
+.media {
+    margin: 0 auto 18.5px 18px;
+}
+.media:hover {
+    cursor: pointer;
+}
+.message {
+display: flex;
+margin-left: 19px;
+margin-bottom: 3px;
+}
+.messageLink {
+    display: block;
+    background: #3577EF;
+    width: 133.5px;
+    height: 25px;
+    text-decoration: none;
+    box-sizing: border-box;
+font-family: 'Lato';
+font-weight: 700;
+font-size: 13px;
+line-height: 16px;
+text-align: center;
+color: #FFFFFF;
+padding-top: 4.5px;
+margin-right: 2.5px;
+border-radius: 4px;
+}
+.messageButton {
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    background: #3577EF;
+    border: none;
+}
+.messageLink:hover, .messageButton:hover {
+    cursor: pointer;
+}
+.rectangle {
+    height: 6px;
+    width: 8px;
+}
+.contactInfo {
+    height: 461px;
+    padding-left: 20px;
+}
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+}
+.itemTitle {
+font-family: 'Lato';
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #5F6164;
+}
+.itemContent {
+    text-decoration: none;
+font-family: 'Lato';
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+}

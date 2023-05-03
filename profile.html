@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="app">
+    <nav>
+      <div class="nav" id="nav">
+        <div class="navList">
+          <ul class="navUl">
+            <li class="channels navItem">
+              <a href="index.html" class="link">👥 Channels & Friends</a>
+            </li>
+            <li class="chat navItem">
+              <a href="chat.html" class="link">💬 Chat</a>
+            </li>
+            <li class="profile navItem">
+              <a href="profile.html" class="link activeLink">👁️‍🗨️ Profile</a>
+            </li>
+          </ul>
+        </div>
+        <button class="nav-button" id="nav-button">
+          <img class="icon" src="./assets/arrow.svg" />
+        </button>
+      </div>
+    </nav>
+
+    <main class="main" id="main">
+      <img src="./assets/profilePhoto.jpg" alt="photo">
+      <div class="nameZone">
+        <h1 class="name">Amilia Luna</h1>
+        <img class="dotIcon" src="./assets/dot.svg">
+      </div>
+      <h2 class="job">UI Designer</h2>
+      <div class="media">
+        <img src="./assets/Social.svg" alt="social">
+      </div>
+      <div class="message">
+      <a class="messageLink" href="">Message</a>
+      <button class="messageButton"><img class="rectangle" src="./assets/Rectangle.svg" alt=""></button> 
+    </div>
+    <div class="contactInfo">
+<div class="infoItem">
+  <span class="itemTitle">Username</span>
+  <span class="itemContent">@amilia_lu</span>
+</div>
+<div class="infoItem">
+  <span class="itemTitle">Email</span>
+  <a class="itemContent" href="mailto:a-luna@gmail.com">a-luna@gmail.com</a>
+</div>
+<div class="infoItem">
+  <span class="itemTitle">Phone</span>
+  <a class="itemContent" href="tel:+12345678">+12345678</a>
+</div>
+<div class="infoItem">
+  <span class="itemTitle">Skype</span>
+  <span class="itemContent">amiluna</span>
+</div>
+<div class="infoItem">
+  <span class="itemTitle">Timezone</span>
+  <span class="itemContent">2:21 PM Local time</span>
+</div>
+    </div>
+    </main>
+
+    <script src="./nav.js"></script>
+  </body>
+</html>

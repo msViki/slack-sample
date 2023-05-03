@@ -1,0 +1,231 @@
+.chat {
+  width: 871px;
+  min-width: 871px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  height: 49.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26.5px 24px 5px;
+}
+
+.header-left {
+  display: flex;
+}
+
+.chat-title {
+  margin: 0px 5px 0 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.header-right {
+  display: flex;
+}
+.headerNumber {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a4a4a4;
+  align-self: center;
+  margin-left: 6px;
+}
+.peopleOnline {
+  display: flex;
+  margin-right: 24px;
+}
+
+.search-input {
+  height: 33px;
+  width: 241px;
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  padding: 8px 16px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  box-sizing: border-box;
+  color: #8d8d8d;
+  margin-right: 23.5px;
+}
+.bell {
+  margin-right: 23px;
+}
+
+/* main */
+
+.titleLine {
+  background: #000000;
+  opacity: 0.24;
+  margin: 0;
+  height: 0.3px;
+}
+
+.friendPhoto {
+  width: 34px;
+  height: 34px;
+  margin-right: 11px;
+  border-radius: 5px;
+}
+.profileLink {
+  all: unset;
+}
+.profileLink:hover {
+  cursor: pointer;
+}
+.name {
+  font-family: 'Lato';
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+color: #000000;
+vertical-align: top;
+}
+.time {
+  font-family: 'Lato';
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #8D8D8D;
+vertical-align: top;
+}
+.mention {
+  font-family: 'Lato';
+font-weight: 400;
+font-size: 13px;
+line-height: 18px;
+color: #3577EF;
+}
+.message {
+  display: flex;
+  margin-top: 18.5px;
+  margin-left: 22px;
+  margin-right: 25px;
+}
+.text {
+  font-family: 'Lato';
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+color: #000000;
+}
+.messageJeshua {
+  margin-bottom: 13.2px;
+}
+.haroldPhoto {
+  margin-top: 10px;
+}
+.messageHarold {
+margin-bottom: 14.2px;
+}
+.messageAada {
+  margin-bottom: 11.7px;
+}
+.messageNala {
+  margin-bottom: 10.3px;
+}
+.messageRamon {
+  margin-bottom: 19.8px;
+}
+.date {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8D8D8D;
+  position: relative;
+  text-align: center;
+}
+.date:before {
+  content: "";
+  display: block;
+  width: 332px;
+  height: 0.2px;
+  background: #000000;
+  opacity: 0.16;
+  margin: 0 23px;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.date:after {
+  content: "";
+  display: block;
+  width: 332px;
+  height: 0.2px;
+  background: #000000;
+  opacity: 0.16;
+  margin: 0 23px;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+.dateYesterday::before, .dateYesterday::after {
+  width: 368px;
+}
+.dateToday:before, .dateToday::after {
+  width: 380px;
+}
+.typeZone {
+  height: 73.5px;
+  display: flex;
+  align-items: center;
+}
+.typeInput {
+font-family: 'Lato';
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #8D8D8D;
+height: 33.5px;
+width: 725px;
+border: none;
+}
+.clipIcon {
+  height: 20px;
+  width: 12px;
+  margin-left: 23px;
+  margin-right: 19px;
+}
+.micIcon {
+  height: 21.5px;
+  width: 15.5;
+  margin-right: 20.5px;
+}
+.emojiIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.message-button {
+  position: fixed;
+  bottom: 30%;
+  right: 260px;
+  border-radius: 15px;
+  background-color: #a3c3ff;
+  border: 2px solid #10203f;
+  opacity: 0.5;
+}
+.message-button-icon {
+  transform: rotate(90deg);
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  
+}

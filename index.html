@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slack</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./server-list.css" />
-    <link rel="stylesheet" href="./channel-list.css" />
-    <link rel="stylesheet" href="./chat.css" />
-    <link rel="stylesheet" href="./profile.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,85 +14,111 @@
     />
   </head>
   <body class="app">
-    <aside class="server-list app-section">
-      <div class="server">
-        <img class="server-icon" src="./assets/Object.jpg" />
+    <nav>
+      <div class="nav" id="nav">
+        <div class="navList">
+          <ul class="navUl">
+            <li class="navItem">
+              <a href="index.html" class="link activeLink"
+                >👥 Channels & Friends</a
+              >
+            </li>
+            <li class="navItem">
+              <a href="chat.html" class="link">💬 Chat</a>
+            </li>
+            <li class="navItem">
+              <a href="profile.html" class="link">👁️‍🗨️ Profile</a>
+            </li>
+          </ul>
+        </div>
+        <button class="nav-button" id="nav-button">
+          <img class="icon" src="./assets/arrow.svg" />
+        </button>
       </div>
-      <div class="server server-inactive">
-        <img class="server-icon" src="./assets/Layer 6.jpg" />
-      </div>
-      <div class="server server-inactive">
-        <img class="server-icon" src="./assets/Layer 7.jpg" />
-      </div>
-    </aside>
-    <section class="channel-and-friends">
-      <div>
-        <h1>Nomad List</h1>
-      </div>
-      <div>
-        <span>All treads</span>
-      </div>
-      <div>
+    </nav>
+
+    <main class="channel-and-friends">
+      <div class="nomad">
+        <div class="nomadTitle">
+          <h1 class="title">Nomad List</h1>
+          <img src="./assets/Nomad.svg">
+        </div>
         <div>
-          <h3>Channels</h3>
-          <span>5</span>
+          <img src="./assets/settings.svg" class="settingsIcon">
+        </div>
+      </div>
+      <div class="treads">
+        <img src="./assets/treads.svg" class="treadsIcon">
+        <span class="treadsTitle">All treads</span>
+      </div>
+      <div>
+        <div class="channels">
+          <span class="channelsTitle">CHANNELS</span>
+          <span class="channelsNumber">11</span>
         </div>
         <ul class="channel-list">
-          <li class="channel-list-item channel-list-item-active">general</li>
-          <li class="channel-list-item">support</li>
-          <li class="channel-list-item">marketing</li>
-          <li class="channel-list-item">thailand</li>
-          <li class="channel-list-item">bali</li>
+          <li class="channel-list-item channel-list-item-active"><a href="./chat.html" class="chatLink">general</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">support</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">marketing</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">thailand</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">bali</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">poland</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">australia</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">jobs</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">startups</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">italy</a></li>
+          <li class="channel-list-item"><a href="./chat.html" class="chatLink">freelance</a></li>
         </ul>
       </div>
       <div>
-        <div>
-          <h3>Friends</h3>
-          <span>3</span>
+        <div class="friends">
+          <span class="friendsTitle">FRIENDS</span>
+          <span class="friendsNumber">6</span>
         </div>
+        
         <div class="friend-list">
           <div class="friend-list-item">
             <div class="friend-status friend-status-online"></div>
-            <img class="friend-avatar" src="./assets/Orlando.jpg" />
-            <span class="friend-name">Orlando Diggs</span>
+            <a href="./chat.html" class="chatLink">
+            <img class="friend-avatar" src="./assets/Orlando.jpg" /></a>
+            <a href="./chat.html" class="chatLink"><span class="friend-name">Orlando Diggs</span></a>
           </div>
           <div class="friend-list-item">
             <div class="friend-status friend-status-online"></div>
-            <img class="friend-avatar" src="./assets/Carmen.jpg" />
-            <span class="friend-name">Carmen Velasco</span>
+            <a href="./chat.html" class="chatLink">
+            <img class="friend-avatar" src="./assets/Carmen.jpg" /></a>
+            <a href="./chat.html" class="chatLink"><span class="friend-name">Carmen Velasco</span></a>
           </div>
           <div class="friend-list-item">
             <div class="friend-status friend-status-offline"></div>
-            <img class="friend-avatar" src="./assets/Marie.jpg" />
+            <a href="./chat.html" class="chatLink">
+            <img class="friend-avatar" src="./assets/Marie.jpg" /> </a>
+            <a href="./chat.html" class="chatLink">
             <span class="friend-name">Marie Jensen</span>
+          </a>
+          </div>
+          <div class="friend-list-item">
+            <div class="friend-status friend-status-offline"></div>
+            <a href="./chat.html" class="chatLink">
+            <img class="friend-avatar" src="./assets/Alex.jpg" /></a>
+            <a href="./chat.html" class="chatLink"><span class="friend-name">Alex Lee</span></a>
+          </div>
+          <div class="friend-list-item">
+            <div class="friend-status friend-status-offline"></div>
+            <a href="./chat.html" class="chatLink">
+            <img class="friend-avatar" src="./assets/Leo.jpg" /></a>
+            <a href="./chat.html" class="chatLink"><span class="friend-name">Leo Gill</span></a>
+          </div>
+          <div class="friend-list-item">
+            <div class="friend-status friend-status-offline"></div>
+            <a href="./chat.html" class="chatLink">
+            <img class="friend-avatar" src="./assets/Brit.jpg" /></a>
+            <a href="./chat.html" class="chatLink"><span class="friend-name">Britney Cooper</span></a>
           </div>
         </div>
       </div>
-    </section>
-    <main class="chat">
-      <header class="header">
-        <div class="header-left">
-          <h2 class="chat-title">#general</h2>
-          <button class="icon-button">
-            <img class="icon" src="./assets/star.svg" />
-          </button>
-        </div>
-        <div class="header-right">
-          <input class="search-input" placeholder="Search..." />
-          <button class="icon-button">
-            <img class="icon" src="./assets/bell.svg" />
-          </button>
-        </div>
-      </header>
-      <div></div>
-      <div></div>
     </main>
-    <aside class="profile" id="profile">
-      <h2>Amilia Luna</h2>
-    </aside>
-    <button class="icon-button" id="profile-button">
-      <img class="icon" src="./assets/arrow.svg" />
-    </button>
-    <script src="./profile.js"></script>
+
+    <script src="./nav.js"></script>
   </body>
 </html>
